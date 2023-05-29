@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div id="add-expence-container">
+        <h1 class="container-heading">Add Expense</h1>
+        <div id="form-container">
+          <form id="expense-form">
+            <div class="input-block">
+              <label for="expense-amount">Expense Amount</label>
+              <input type="text" id="expense-amount" />
+            </div>
+            <div class="input-block">
+              <label for="expense-description">Expense Description</label>
+              <input type="text" id="expense-description" />
+            </div>
+            <div class="input-block">
+              <label for="expense-category">Choose a Categeory</label>
+              <select name="expense-category" id="expense-category">
+                <option value="fuel" selected>Fuel</option>
+                <option value="food">Food</option>
+                <option value="electricity">Electricity</option>
+                <option value="movies">Movies</option>
+              </select>
+            </div>
+            <button id="add-expense-btn">Add Expense</button>
+          </form>
+        </div>
+      </div>
+      <div id="expense-list-conatiner">
+        <h1 class="container-heading">Expense List</h1>
+        <div id="expense-list-container">
+          <ol id="expense-list">
+            <!-- <li>
+              2000 rs - movies - apr month
+              <button id="edit-expense">Edit</button
+              ><button id="delete-expense">Delete</button>
+            </li>
+            <li>
+              1000 rs - food - jan month
+              <button id="edit-expense">Edit</button
+              ><button id="delete-expense">Delete</button>
+            </li> -->
+          </ol>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
